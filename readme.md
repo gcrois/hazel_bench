@@ -2,7 +2,6 @@
 
 Browser automation for hazel
 
-image:
 ![image](output.gif)
 
 ```typescript
