@@ -1,0 +1,3 @@
+[submodule "hazel"]
+	path = hazel
+	url = git@github.com:hazelgrove/hazel.git

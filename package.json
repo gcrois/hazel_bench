@@ -1,0 +1,21 @@
+{
+  "name": "hazel_bench",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tests/index.ts",
+  "scripts": {
+    "build:hazel": "cd hazel && make deps && make release",
+    "dev:hazel": "cd hazel && make serve",
+    "test": "npm run dev:hazel > /dev/null 2>&1 & tsc --outDir dist && cd dist && node tests/index.js; kill -9 $(lsof -t -i:8000)"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "puppeteer": "^23.4.1",
+    "puppeteer-screen-recorder": "^3.0.3"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2"
+  }
+}
